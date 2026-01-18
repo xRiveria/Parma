@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Ryan Tan Wen Terr",
+  name: "Ryan Tan Wen Ter",
   authorName: "Ryan Tan Wen Ter",
   username: "ryantanwt",
   description:
