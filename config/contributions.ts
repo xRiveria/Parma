@@ -9,21 +9,21 @@ export const contributionsUnsorted: contributionsInterface[] = [
   {
     repo: "Spartan Engine",
     contibutionDescription:
-      "Open-source Next.js portfolio template. Trusted and forked by developers worldwide (130+ GitHub stars).",
+      "A modern open-source C++ engine focused on real-time rendering, ECS, and practical production-style architecture.",
     repoOwner: "PanosK92",
     link: "https://github.com/PanosK92/SpartanEngine",
   },
   {
     repo: "Hazel Engine",
     contibutionDescription:
-      "Modern Next.js SaaS template. Production-ready starter for devs and AI startups (30+ GitHub stars).",
+      "An educational C++ engine by The Cherno designed to teach how a game engine is built from the ground up.",
     repoOwner: "TheCherno",
     link: "https://github.com/TheCherno/Hazel",
   },
   {
     repo: "Wicked Engine",
     contibutionDescription:
-      "Modern Next.js SaaS template. Production-ready starter for devs and AI startups (30+ GitHub stars).",
+      "A high-performance open-source engine showcasing advanced real-time graphics techniques like raytracing and modern GPU pipelines.",
     repoOwner: "turanszkij",
     link: "https://github.com/turanszkij/WickedEngine",
   },
