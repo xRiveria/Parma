@@ -24,7 +24,6 @@ export interface ProjectInterface {
   endDate: Date;
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
-  pagesInfoArr: PagesInfoInterface[];
 }
 
 export const Projects: ProjectInterface[] = [
@@ -48,14 +47,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2024-01-01"),
     endDate: new Date("2026-01-01"),
     companyLogoImg: "/projects/Nexus.png",
-    pagesInfoArr: [
-      {
-        title: "Core Architecture & Rendering",
-        description:
-          "Core engine architecture, resource manager, Vulkan rendering, and CI/CD workflows supporting the game in active development.",
-        imgArr: ["/profile-img.jpg"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Nexus is a 3D game engine currently being actively developed to power a third-person shooter named Left Behind.",
@@ -79,26 +70,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2024-04-01"),
     endDate: new Date("2024-10-01"),
     companyLogoImg: "/projects/Cyclone.png",
-    pagesInfoArr: [
-      {
-        title: "Job System & Scheduling",
-        description:
-          "Simple API for launching jobs based on hardware availability, with loop-based parallelization and priority scheduling.",
-        imgArr: ["/logo.png"],
-      },
-      {
-        title: "Contexts & Dependencies",
-        description:
-          "High-level Contexts enable cross-thread dependencies, waiting, and controlled syncing of results back to the main thread.",
-        imgArr: ["/logo.png"],
-      },
-      {
-        title: "Compilation",
-        description:
-          "Build via Scripts/CycloneBuildWindows.bat (Premake) to generate a C++17 solution in the project root.",
-        imgArr: ["/logo.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Cyclone is a C++ multithreading library built for usage in real-time applications on Windows. It provides a simple API for launching threads based on hardware availability whilst supporting loop-based parallelizations and priority scheduling.",
@@ -134,14 +105,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-01-01"),
     endDate: new Date("2022-12-01"),
     companyLogoImg: "/projects/Ithildin.png",
-    pagesInfoArr: [
-      {
-        title: "Raytracing Engine",
-        description:
-          "Vulkan raytracing engine using NVIDIA RTX extensions with a custom GUI for real-time parameter tuning.",
-        imgArr: ["/logo.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         `Ithilien, or "Starlight" in Sindarian, is a raytracing engine implemented with Vulkan using NVIDIA's RTX raytracing extension.`,
@@ -167,32 +130,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2021-07-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/projects/Spatium.png",
-    pagesInfoArr: [
-      {
-        title: "BVH Techniques",
-        description:
-          "Top-down K-split with SAH, bottom-up two-pass merge (priority queues + candidate merging), and incremental dynamic insertion with volume heuristics & self-balancing.",
-        imgArr: ["/projects/builtdesign/logo.png"],
-      },
-      {
-        title: "K-D Tree Techniques",
-        description:
-          "SAH-based split selection by sampling uniform positions within AABB; optimized node memory footprint for faster traversal.",
-        imgArr: ["/projects/builtdesign/logo.png"],
-      },
-      {
-        title: "Quadtree & Octree",
-        description:
-          "Simple yet effective implementations; 10M point search tests show ~18x speed improvements over regular search with memory optimizations (bit packing, locational codes).",
-        imgArr: ["/projects/builtdesign/logo.png"],
-      },
-      {
-        title: "Compilation",
-        description:
-          "Build via Scripts/SpatiumBuildWindows.bat (Premake) to generate a C++17 solution in the project root.",
-        imgArr: ["/projects/builtdesign/logo.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "A collection of spacial partitioning techniques made for personal use in real-time applications as well as coursework.",
@@ -228,20 +165,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2023-01-01"),
     endDate: new Date("2024-12-01"),
     companyLogoImg: "/projects/Celestia.png",
-    pagesInfoArr: [
-      {
-        title: "Engine Tools & Systems",
-        description:
-          "Renderer, profiler, editor tooling, and C#/.NET scripting built to support rapid iteration and production needs.",
-        imgArr: ["/projects/superquotes/app_2.webp"],
-      },
-      {
-        title: "Production Workflow",
-        description:
-          "Built to support flexible design decisions while maintaining strong performance and usability.",
-        imgArr: ["/projects/superquotes/app_4.webp"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Celestia is a game engine made for the creation of 2D games.",
@@ -269,20 +192,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2021-01-01"),
     endDate: new Date("2021-12-01"),
     companyLogoImg: "/projects/Aurora.png",
-    pagesInfoArr: [
-      {
-        title: "Rendering & ECS",
-        description:
-          "Full PBR-based rendering, custom ECS, multithreading, physics, and C# scripting with a mature tools framework.",
-        imgArr: ["/projects/apex/app_7.webp"],
-      },
-      {
-        title: "Editor Contexts & Tools",
-        description:
-          "Discipline-based editor contexts and a mature tools framework for scalable development workflows.",
-        imgArr: ["/projects/apex/app_1.webp"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Aurora, named after what I consider to be the most beautiful natural wonder in the world, is a game engine with an emphasis on architectural quality and high performance, featuring discipline-based editor contexts and a mature tools framework.",
@@ -308,20 +217,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2023-01-01"),
     endDate: new Date("2024-12-01"),
     companyLogoImg: "/projects/Ingenium.png",
-    pagesInfoArr: [
-      {
-        title: "Engine & Game Systems",
-        description:
-          "Engine architecture and core systems (ECS, renderer, scripting, editor tools) supporting a full production game.",
-        imgArr: ["/projects/builtdesign-blogs/blog_2.webp"],
-      },
-      {
-        title: "Editor Tooling",
-        description:
-          "Inspector/hierarchy tooling and workflows built to support iteration under shifting production scope.",
-        imgArr: ["/projects/builtdesign-blogs/blog_3.webp"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Ingenium is a 2D souls-like platformer that follows Wally, a younger engineer who must defeat invaders from another realm wielding magical crystals brimming with ancient power.",
@@ -350,20 +245,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-12-01"),
     companyLogoImg: "/projects/DuckQuest.png",
-    pagesInfoArr: [
-      {
-        title: "Technical Leadership",
-        description:
-          "Provided guidance on engine architecture, version control, and production timelines while contributing to core systems.",
-        imgArr: ["/projects/card/card_2.webp", "/projects/card/card_3.webp"],
-      },
-      {
-        title: "Core Systems",
-        description:
-          "Handled responsibilities involving rendering, serialization, UI, and editor tooling in a C++ codebase.",
-        imgArr: ["/projects/card/card_1.webp"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Duck Quest is a 2D deck-building action platformer featuring a modern day duck who is mysteriously summoned to a parallel universe by an ancient duck civilization.",
@@ -392,20 +273,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-01-01"),
     endDate: new Date("2022-12-01"),
     companyLogoImg: "/projects/LegendOfTheGoldenTortoise.png",
-    pagesInfoArr: [
-      {
-        title: "Engine Architecture (C)",
-        description:
-          "Built core architecture, ECS, renderer, level builder, and gameplay mechanics under a C-only constraint.",
-        imgArr: ["/projects/cirql/web_1.png", "/projects/cirql/web_2.png"],
-      },
-      {
-        title: "Team Onboarding",
-        description:
-          "Established coding conventions and guided a largely inexperienced team through delivery.",
-        imgArr: ["/projects/cirql/web_3.png", "/projects/cirql/web_4.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Legend of the Golden Tortoise is a 2D stealth-based dungeon crawler featuring Izumi, a ninja who must traverse through an abandoned pagoda, overcome its dangers and claim the treasures within for his people.",
@@ -435,14 +302,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2021-01-01"),
     endDate: new Date("2021-12-01"),
     companyLogoImg: "/projects/DeckClash.png",
-    pagesInfoArr: [
-      {
-        title: "Prototype & Balance",
-        description:
-          "Expanded a royale framework with new units/towers, balance changes, and a custom mana system for fast iteration.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Built on top of Unity's royale framework, Deck Clash expands upon the original by adding more units, tower types and introduces rebalances across the board.",
@@ -471,14 +330,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2020-01-01"),
     endDate: new Date("2020-12-01"),
     companyLogoImg: "/projects/TheStoneGuardian.gif",
-    pagesInfoArr: [
-      {
-        title: "Unreal Engine Prototype",
-        description:
-          "First foray into Unreal Engine: level building, blueprint programming, camera work, and animation events.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "The Stone Guardian is a hack and slash action RPG inspired by Dark Souls and Soulsborne.",
@@ -506,14 +357,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2019-01-01"),
     endDate: new Date("2020-12-01"),
     companyLogoImg: "/projects/Solus.png",
-    pagesInfoArr: [
-      {
-        title: "Creative Direction & Systems",
-        description:
-          "Led a 9-member team, built gameplay systems, UI integrations, and handled marketing/promotion workflows.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Solus: Remnants of Attera is an action adventure, hack and slash RPG which follows Ark, a boy whose village comes under attack from otherworldly invaders known only as the Legion.",
@@ -544,14 +387,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2018-01-01"),
     endDate: new Date("2019-12-01"),
     companyLogoImg: "/projects/Aeternum.png",
-    pagesInfoArr: [
-      {
-        title: "MMORPG Systems & Multiplayer",
-        description:
-          "Led a small team, built core RPG systems, and prototyped multiplayer with PhotonBolt.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Aeternum: Destiny's Call is an action MMORPG which draws heavy inspiration from classics such as the Diablo and Torchlight series.",
@@ -579,14 +414,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2019-01-01"),
     endDate: new Date("2019-12-01"),
     companyLogoImg: "/projects/MyMonsterStory.png",
-    pagesInfoArr: [
-      {
-        title: "Mixed Reality Gameplay",
-        description:
-          "Built for HoloLens with voice commands, touch gestures, and spatial mapping interacting with the player’s environment.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "My Monster Story is a mixed reality pet simulation game which revolves around fantasy pets, items and furniture interacting with the player's environment in real time with voice commands, touch gestures and spatial mapping.",
@@ -614,14 +441,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2019-01-01"),
     endDate: new Date("2019-12-01"),
     companyLogoImg: "/projects/DumpsterDining.png",
-    pagesInfoArr: [
-      {
-        title: "Mobile Minigames & Integration",
-        description:
-          "Designed touch-first gameplay and integrated Unity workflows with Android Studio and Xcode.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Dumpster Dining is a mobile based cooking simulation adventure consisting of unique minigames, mind-throbbing puzzles and an engaging story which drives players to achieve that perfect three stars rating on the dishes they conjure.",
@@ -649,14 +468,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
     companyLogoImg: "/projects/Incubus.gif",
-    pagesInfoArr: [
-      {
-        title: "Solo Production",
-        description:
-          "End-to-end solo development: writing, design, programming, VFX, sound, and asset creation.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Incubus: The Last Tape follows an archaeologist by the name of Ryan Drake, whose treasure hunting adventures leads him to seek out Iram of the Pillars, a lost city mentioned in the Qur’an rumored to harbor massive amounts of gold and riches.",
@@ -684,14 +495,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
     companyLogoImg: "/projects/AncientTidings.png",
-    pagesInfoArr: [
-      {
-        title: "Board Game & Companion App",
-        description:
-          "Drafted story, iterated game mechanics, and built a companion app for point tracking and utilities.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Ancient Tidings is a physical board game revolving around the recurring theme of disasters.",
@@ -720,14 +523,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
     companyLogoImg: "/projects/Amalgam.png",
-    pagesInfoArr: [
-      {
-        title: "Design & Balance",
-        description:
-          "Led core game design, balancing, and playtest iteration around minion amalgamation mechanics.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Amalgam is a physical card game revolving around the theme of amalgamations.",
@@ -756,14 +551,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
     companyLogoImg: "/projects/TalesOfLunaria.png",
-    pagesInfoArr: [
-      {
-        title: "Server Ops & Infrastructure",
-        description:
-          "Hosted and operated a Minecraft RPG server with plugins, wiki, and analytics tooling.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Tales of Lunaria was my second foray into gaming servers after graduating high school, which was the leading reason behind my previous server's closure.",
@@ -791,14 +578,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2017-01-01"),
     endDate: new Date("2017-12-01"),
     companyLogoImg: "/projects/ASpaceOdessey.gif",
-    pagesInfoArr: [
-      {
-        title: "Environment & Gameplay Showcase",
-        description:
-          "Built a lunar base environment and a second level featuring combat inspired by classic Space Invaders.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "A Space Odessey expanded way beyond its original scope and remains one of my fondest projects to date.",
@@ -826,14 +605,6 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2015-01-01"),
     endDate: new Date("2016-12-01"),
     companyLogoImg: "/projects/Sylvan.png",
-    pagesInfoArr: [
-      {
-        title: "Server Leadership",
-        description:
-          "Led engineering, design, ops, recruitment, and marketing; monetized via cosmetics and scaled to 8 team members.",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "Sylvan was a gaming server which provided a unique RPG experience coupled with player abilities, factions and a whole fantasy universe built upon the foundations of Minecraft.",
