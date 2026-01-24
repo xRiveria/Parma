@@ -8,7 +8,7 @@ export const siteConfig = {
   links: {
     linkedIn: "https://www.linkedin.com/in/ryantanwt/",
     gitHub: "https://github.com/xRiveria",
-    templateRepo: "https://github.com/xRiveria/Cyclone",
+    templateRepo: "https://github.com/xRiveria",
     twitter: "https://x.com/HelloRyan",
   },
   ogImage:
