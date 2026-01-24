@@ -63,13 +63,19 @@ export type ValidSkills =
   | "Framer Motion";
 
 export type ValidCategory =
-  | "Full Stack"
-  | "Frontend"
-  | "Backend"
-  | "UI/UX"
-  | "Web Dev"
-  | "Mobile Dev"
-  | "3D Modeling";
+  | "Custom Game Engine"
+  | "Graphics"
+  | "Game Development"
+  | "Unity"
+  | "C++"
+  | "Multithreading"
+  | "Spatial Data Structures"
+  | "Unreal Engine"
+  | "Mixed Reality"
+  | "Board Game"
+  | "Card Game"
+  | "Modding"
+  | "Server Management"
 
 export type ValidExpType = "Personal" | "Professional";
 
