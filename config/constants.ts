@@ -76,6 +76,7 @@ export type ValidCategory =
   | "Card Game"
   | "Modding"
   | "Server Management"
+    "Game Development";
 
 export type ValidExpType = "Personal" | "Professional";
 

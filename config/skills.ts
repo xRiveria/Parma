@@ -11,150 +11,151 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "C++",
     description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
+      "High-performance systems programming for games, engines, and low-level applications.",
     rating: 5,
     icon: Icons.cpp,
   },
   {
     name: "C#",
     description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
+      "Object-oriented development for backend services, tooling, and Unity applications.",
     rating: 5,
     icon: Icons.csharp,
   },
   {
     name: "AWS",
     description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
-    rating: 4,
-    icon: Icons.amazonaws,
-  },
-  {
-    name: "Nest.js",
-    description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
-    rating: 4,
-    icon: Icons.nestjs,
-  },
-  {
-    name: "AWS",
-    description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
+      "Cloud infrastructure for scalable compute, storage, networking, and deployment.",
     rating: 5,
     icon: Icons.amazonaws,
   },
   {
     name: "Unity",
     description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
+      "Game development platform for building real-time 2D and 3D interactive experiences.",
     rating: 5,
     icon: Icons.unity,
   },
   {
-    name: "MongoDB",
+    name: "Unreal Engine",
     description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
+      "AAA-grade real-time engine for high-fidelity games and simulations.",
     rating: 5,
-    icon: Icons.mongodb,
+    icon: Icons.unrealengine,
   },
   {
-    name: "Typescript",
+    name: "JavaScript",
     description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
-    rating: 5,
-    icon: Icons.typescript,
-  },
-  {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 5,
+      "Dynamic scripting language for building interactive web applications and tooling.",
+    rating: 4,
     icon: Icons.javascript,
   },
   {
-    name: "HTML 5",
+    name: "MongoDB",
     description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
+      "Flexible NoSQL document database for modern, scalable applications.",
     rating: 4,
-    icon: Icons.html5,
-  },
-  {
-    name: "CSS 3",
-    description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
-    rating: 4,
-    icon: Icons.css3,
-  },
-  {
-    name: "React Native",
-    description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
-    rating: 4,
-    icon: Icons.react,
-  },
-  {
-    name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-    rating: 3,
-    icon: Icons.angular,
-  },
-  {
-    name: "Redux",
-    description:
-      "Manage app state effectively using a predictable and centralized state container.",
-    rating: 4,
-    icon: Icons.redux,
-  },
-  {
-    name: "Socket.io",
-    description:
-      "Enable real-time, bidirectional communication between clients and servers effortlessly.",
-    rating: 3,
-    icon: Icons.socketio,
-  },
-  {
-    name: "Material UI",
-    description:
-      "Create stunning and responsive UIs with a popular React UI framework.",
-    rating: 4,
-    icon: Icons.mui,
-  },
-
-  {
-    name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
-    rating: 5,
-    icon: Icons.tailwindcss,
-  },
-  {
-    name: "AWS",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.amazonaws,
-  },
-  {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
+    icon: Icons.mongodb,
   },
   {
     name: "MySQL",
     description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 2,
+      "Relational database for structured data and transactional workloads.",
+    rating: 4,
     icon: Icons.mysql,
   },
   {
-    name: "Netlify",
+    name: "PostgreSQL",
     description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+      "Advanced open-source relational database with strong consistency and extensibility.",
     rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.postgreSQL,
+  },
+
+  // DevOps / Platform
+
+  {
+    name: "Vault",
+    description:
+      "Secure secrets management and encryption for infrastructure and applications.",
+    rating: 4,
+    icon: Icons.vault,
+  },
+  {
+    name: "Portainer",
+    description:
+      "Container management UI for Docker and Kubernetes environments.",
+    rating: 4,
+    icon: Icons.portainer,
+  },
+  {
+    name: "Jenkins",
+    description:
+      "CI/CD automation server for building, testing, and deploying pipelines.",
+    rating: 4,
+    icon: Icons.jenkins,
+  },
+  {
+    name: "GitLab",
+    description:
+      "Source control with integrated CI/CD, issue tracking, and DevOps workflows.",
+    rating: 4,
+    icon: Icons.gitlab,
+  },
+  {
+    name: "SonarQube",
+    description:
+      "Static code analysis for maintaining code quality and security.",
+    rating: 4,
+    icon: Icons.sonarqube,
+  },
+  {
+    name: "Sonatype",
+    description:
+      "Dependency lifecycle management and vulnerability detection.",
+    rating: 4,
+    icon: Icons.sonatype,
+  },
+
+  // Observability / Monitoring
+
+  {
+    name: "Grafana",
+    description:
+      "Visualization and monitoring dashboards for metrics, logs, and traces.",
+    rating: 5,
+    icon: Icons.grafana,
+  },
+  {
+    name: "Sentry",
+    description:
+      "Application error tracking and performance monitoring.",
+    rating: 4,
+    icon: Icons.sentry,
+  },
+
+  // Collaboration / Productivity
+
+  {
+    name: "Jira",
+    description:
+      "Agile project management and issue tracking.",
+    rating: 4,
+    icon: Icons.jira,
+  },
+  {
+    name: "Confluence",
+    description:
+      "Team documentation and knowledge-sharing platform.",
+    rating: 4,
+    icon: Icons.confluence,
+  },
+  {
+    name: "Homepage",
+    description:
+      "Self-hosted dashboard for managing and accessing internal services.",
+    rating: 3,
+    icon: Icons.homepage,
   },
 ];
 
