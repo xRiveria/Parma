@@ -1,9 +1,7 @@
 import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 
 interface PagesInfoInterface {
-  title: string;
   imgArr: string[];
-  description?: string;
 }
 
 interface DescriptionDetailsInterface {
@@ -24,6 +22,7 @@ export interface ProjectInterface {
   endDate: Date;
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
+  pagesInfoArr: PagesInfoInterface[];
 }
 
 export const Projects: ProjectInterface[] = [
@@ -56,6 +55,8 @@ export const Projects: ProjectInterface[] = [
         "Developed rendering and resource pipelines while supporting a live game production.",
       ],
     },
+    pagesInfoArr: [
+    ],
   },
     {
     id: "cyclone",
@@ -84,6 +85,7 @@ export const Projects: ProjectInterface[] = [
         "Packaged a Premake-based build flow via CycloneBuildWindows.bat to generate a C++17 solution.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "ithildin",
@@ -98,7 +100,7 @@ export const Projects: ProjectInterface[] = [
     companyLogoImg: "/projects/Ithildin.png",
     descriptionDetails: {
       paragraphs: [
-        `Ithilien, or "Starlight" in Sindarian, is a raytracing engine implemented with Vulkan using NVIDIA's RTX raytracing extension.`,
+        `Ithildin, or "Starlight" in Sindarian, is a raytracing engine implemented with Vulkan using NVIDIA's RTX raytracing extension.`,
         `Inspired by Peter Shirley's popular series of books, a custom GUI is added for real-time parameter changes.`,
         `With multithreading support, BVH tree and AABB ray intersection optimizations, the cover scene of the first book reaches ~140 FPS using 8 rays per pixel and up to 16 bounces, although I suspect performance can further be improved in various places.`,
       ],
@@ -108,6 +110,11 @@ export const Projects: ProjectInterface[] = [
         "Optimized performance using multithreading, BVH, and AABB intersection improvements.",
       ],
     },
+    pagesInfoArr: [
+      {
+        imgArr: ["/projects/Ithildin/CornelBox.png", "/projects/Ithildin/Worlds.png", "/projects/Ithildin/Heatmap.png"]
+      }
+    ],
   },
   {
     id: "spatium",
@@ -142,6 +149,7 @@ export const Projects: ProjectInterface[] = [
         "Provided a Premake-based Windows build flow via SpatiumBuildWindows.bat to generate a C++17 solution.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "celestia",
@@ -170,6 +178,11 @@ export const Projects: ProjectInterface[] = [
         "Gained deep experience in team leadership, workflows, and evolving technical requirements.",
       ],
     },
+    pagesInfoArr: [
+      {
+        imgArr: ["/projects/Celestia/TitleScene.png", "/projects/Celestia/TileEditor.png", "/projects/Celestia/Profiler.png"]
+      }
+    ],
   },
   {
     id: "aurora",
@@ -195,6 +208,7 @@ export const Projects: ProjectInterface[] = [
         "Designed discipline-based editor contexts and a mature tools framework for scalable workflows.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "ingenium",
@@ -222,6 +236,7 @@ export const Projects: ProjectInterface[] = [
         "Delivered the game successfully after six months of development and playtesting.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "duck-quest",
@@ -251,6 +266,7 @@ export const Projects: ProjectInterface[] = [
         "Delivered a polished game after six weeks of intensive iteration and playtesting.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "legend-of-the-golden-tortoise",
@@ -279,6 +295,7 @@ export const Projects: ProjectInterface[] = [
         "Delivered a complete game after six weeks of iteration and playtesting.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "deck-clash",
@@ -307,6 +324,7 @@ export const Projects: ProjectInterface[] = [
         "Used as a rapid prototyping sandbox for future gameplay and systems exploration.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "the-stone-guardian",
@@ -334,6 +352,7 @@ export const Projects: ProjectInterface[] = [
         "Solved key gameplay challenges around camera movement and animation events through iteration and research.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "solus",
@@ -364,6 +383,7 @@ export const Projects: ProjectInterface[] = [
         "Resolved early design/pillar issues through a second prototype before pausing the project in 2020.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "aeternum",
@@ -391,6 +411,7 @@ export const Projects: ProjectInterface[] = [
         "Prototyped multiplayer using PhotonBolt, successfully introducing networked gameplay dynamics.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "my-monster-story",
@@ -418,6 +439,7 @@ export const Projects: ProjectInterface[] = [
         "Delivered a demonstration-ready product now used in schools.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "dumpster-dining",
@@ -445,6 +467,7 @@ export const Projects: ProjectInterface[] = [
         "Integrated Unity workflows with Android Studio and Xcode toolchains.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "incubus",
@@ -472,6 +495,7 @@ export const Projects: ProjectInterface[] = [
         "Learned end-to-end production skills through full creative ownership.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "ancient-tidings",
@@ -500,6 +524,7 @@ export const Projects: ProjectInterface[] = [
         "Drafted the narrative and built a companion app for scoring and gameplay utilities.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "amalgam",
@@ -528,6 +553,7 @@ export const Projects: ProjectInterface[] = [
         "Iterated through playtests to refine board control and pacing.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "tales-of-lunaria",
@@ -555,6 +581,7 @@ export const Projects: ProjectInterface[] = [
         "Shut down in late 2018 due to shifting commitments and education priorities.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "a-space-odessey",
@@ -582,6 +609,7 @@ export const Projects: ProjectInterface[] = [
         "Created an additional combat level inspired by Space Invaders.",
       ],
     },
+    pagesInfoArr: [],
   },
   {
     id: "sylvan",
@@ -611,6 +639,7 @@ export const Projects: ProjectInterface[] = [
         "Transferred ownership in Oct 2016; server closed Dec 2016.",
       ],
     },
+    pagesInfoArr: [],
   },
 ];
 

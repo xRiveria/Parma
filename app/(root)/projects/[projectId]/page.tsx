@@ -116,6 +116,29 @@ export default async function Project({ params }: ProjectPageProps) {
         />
       </div>
 
+      <div className="mb-7 ">
+        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+          Screenshots
+        </h2>
+        {project.pagesInfoArr.map((page, ind) => (
+          <div key={ind}>
+            <div>              
+              {page.imgArr.map((img, ind) => (
+                <Image
+                  src={img}
+                  key={ind}
+                  alt={img}
+                  width={720}
+                  height={405}
+                  className="my-4 rounded-md border bg-muted transition-colors"
+                  priority
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
         <Link
