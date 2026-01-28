@@ -34,8 +34,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Custom Game Engine", "Game Development"],
     shortDescription:
       "Actively developed 3D game engine powering a third-person shooter (Left Behind); technical lead managing a 12-engineer team.",
-    websiteLink: "https://nbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/minimal-next-portfolio",
     techStack: [
       "C++",
       "Vulkan",
@@ -64,6 +62,7 @@ export const Projects: ProjectInterface[] = [
     companyName: "Cyclone",
     type: "Personal",
     category: ["C++", "Multithreading"],
+    githubLink: "https://github.com/xRiveria/Cyclone",
     shortDescription:
       "C++ multithreading library for Windows real-time apps with job-based scheduling, loop parallelization, priority control, and cross-thread dependency contexts.",
     techStack: ["C++", "Multithreading", "Premake"],
@@ -93,6 +92,7 @@ export const Projects: ProjectInterface[] = [
     companyName: "Ithildin",
     type: "Personal",
     category: ["C++", "Graphics", "Spatial Data Structures"],
+    githubLink: "https://github.com/xRiveria/Ithildin",
     shortDescription:
       "Vulkan RTX raytracing engine with real-time GUI controls, multithreading, BVH/AABB optimizations, and high-FPS performance.",
     techStack: ["C++", "Vulkan", "Raytracing", "Bounding Volume Hierarchy", "ImGui", "Multithreading"],
@@ -124,7 +124,7 @@ export const Projects: ProjectInterface[] = [
     category: ["C++","Spatial Data Structures"],
     shortDescription:
       "Collection of spatial partitioning techniques (BVH, K-D Tree, Quadtree, Octree) optimized for real-time use with strong performance on dense scenes and large point searches.",
-    websiteLink: "https://builtdesign.in",
+    githubLink: "https://github.com/xRiveria/Spatium",
     techStack: ["C++", "Bounding Volume Hierarchy", "Multithreading", "Premake"],
     startDate: new Date("2021-07-01"),
     endDate: new Date("2022-07-01"),
@@ -159,8 +159,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Custom Game Engine", "Graphics", "Game Development"],
     shortDescription:
       "Custom 2D game engine built from scratch to ship a souls-like action platformer (Ingenium), focusing on performance, usability, and tooling.",
-    websiteLink:
-      "https://play.google.com/store/apps/details?id=com.thesuperlife",
     techStack: ["C++", "C#", "OpenGL", "Mono", "ECS", "ImGui"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2024-12-01"),
@@ -193,7 +191,7 @@ export const Projects: ProjectInterface[] = [
     category: ["Custom Game Engine", "Graphics", "Game Development"],
     shortDescription:
       "High-performance 3D game engine inspired by Decima, featuring PBR rendering, custom ECS, multithreading, physics, and C# scripting.",
-    githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
+    githubLink: "https://github.com/xRiveria/Aurora",
     techStack: ["C++", "C#", "DirectX", "Vulkan", "OpenGL", "PBR Rendering", "ECS", "Multithreading"],
     startDate: new Date("2021-01-01"),
     endDate: new Date("2021-12-01"),
@@ -219,7 +217,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Custom Game Engine"],
     shortDescription:
       "2D souls-like platformer built on a custom engine; technical lead owning architecture and core systems while managing a six-engineer team.",
-    websiteLink: "https://blog.builtdesign.in",
     techStack: ["C++", "C#", "OpenGL", "Mono", "ECS", "ImGui"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2024-12-01"),
@@ -251,8 +248,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Custom Game Engine"],
     shortDescription:
       "2D deck-building action platformer delivered in six weeks; technical lead guiding architecture, tooling, and production timelines.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
     techStack: ["C++", "OpenGL", "ECS", "ImGui"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-12-01"),
@@ -285,7 +280,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Custom Game Engine"],
     shortDescription:
       "2D stealth dungeon crawler built in C; technical lead owning engine architecture, ECS, renderer, and level builder while mentoring a mostly non-programming team.",
-    websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
     techStack: ["C++", "OpenGL", "ImGui"],
     startDate: new Date("2022-01-01"),
     endDate: new Date("2022-12-01"),
@@ -318,8 +312,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity"],
     shortDescription:
       "Clash Royale-inspired Unity prototype expanding a royale framework with new units, towers, and a custom mana system for rapid gameplay experimentation.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["C++", "ECS", "2D Rendering", "Tooling/Level Builder"],
     startDate: new Date("2021-01-01"),
     endDate: new Date("2021-12-01"),
@@ -347,8 +339,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unreal Engine"],
     shortDescription:
       "Soulsborne-inspired hack-and-slash action RPG built in Unreal Engine; solo project focused on combat, level building, and blueprint programming.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unreal Engine", "Blueprints", "Level Design"],
     startDate: new Date("2020-01-01"),
     endDate: new Date("2020-12-01"),
@@ -375,8 +365,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity"],
     shortDescription:
       "Action adventure hack-and-slash RPG; creative director leading a 9-person team, owning gameplay systems and marketing until project paused in 2020.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unity", "C#", "Gameplay Systems"],
     startDate: new Date("2019-01-01"),
     endDate: new Date("2020-12-01"),
@@ -410,8 +398,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity"],
     shortDescription:
       "Action MMORPG built in Unity; led a 3-person team, implemented the full game and a successful PhotonBolt multiplayer prototype under tight constraints.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unity", "C#", "PhotonBolt"],
     startDate: new Date("2018-01-01"),
     endDate: new Date("2019-12-01"),
@@ -429,7 +415,11 @@ export const Projects: ProjectInterface[] = [
         "Prototyped multiplayer using PhotonBolt, successfully introducing networked gameplay dynamics.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["F0gQ6X_e_XM"]
+      }
+    ],
   },
   {
     id: "my-monster-story",
@@ -438,8 +428,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity", "Mixed Reality"],
     shortDescription:
       "Mixed reality pet simulation for Microsoft HoloLens; sole programmer integrating spatial mapping, gestures, and voice controls for real-world interaction.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unity", "C#", "HoloLens", "Mixed Reality"],
     startDate: new Date("2019-01-01"),
     endDate: new Date("2019-12-01"),
@@ -457,7 +445,11 @@ export const Projects: ProjectInterface[] = [
         "Delivered a demonstration-ready product now used in schools.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["nrYfRmuXkHU"]
+      }
+    ],
   },
   {
     id: "dumpster-dining",
@@ -466,8 +458,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity"],
     shortDescription:
       "Mobile cooking simulation adventure for iOS/Android; lead designer/programmer building touchscreen-driven minigames and Unity-to-native platform integrations.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unity", "C#", "Android Studio"],
     startDate: new Date("2019-01-01"),
     endDate: new Date("2019-12-01"),
@@ -485,7 +475,11 @@ export const Projects: ProjectInterface[] = [
         "Integrated Unity workflows with Android Studio and Xcode toolchains.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["EazS6jGWpTA"]
+      }
+    ],
   },
   {
     id: "incubus",
@@ -494,8 +488,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity"],
     shortDescription:
       "Solo psychological horror project; handled design, writing, asset creation, programming, VFX, and sound with full creative control.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unity", "C#", "Gameplay Systems"],
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
@@ -522,8 +514,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Board Game"],
     shortDescription:
       "Physical board game centered on disasters and asymmetric civilizations; led narrative design and built a companion app for scoring/support tools.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Gameplay Systems"],
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
@@ -551,8 +541,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Card Game"],
     shortDescription:
       "Physical card game about combining minions into stronger forms; lead designer balancing stats/abilities and combat pacing for playtests.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Gameplay Systems"],
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
@@ -580,8 +568,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Modding", "Server Management", "Game Development"],
     shortDescription:
       "High-end Minecraft RPG server with polished plugins and external infrastructure (wiki/analytics); peaked at 50 DAU in beta before shutdown in late 2018.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Java", "Gameplay Systems"],
     startDate: new Date("2018-01-01"),
     endDate: new Date("2018-12-01"),
@@ -608,8 +594,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Game Development", "Unity"],
     shortDescription:
       "Unity sci-fi project set on Mars; expanded scope into a full environment showcase with a second combat level inspired by Space Invaders.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Unity", "C#", "Gameplay Prototyping"],
     startDate: new Date("2017-01-01"),
     endDate: new Date("2017-12-01"),
@@ -636,8 +620,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Modding", "Server Management", "Game Development"],
     shortDescription:
       "Long-running Minecraft RPG server with custom universe and monetization; led technical implementation, recruitment, and marketing, peaking at 150 daily players.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["Java", "Gameplay Systems"],
     startDate: new Date("2015-01-01"),
     endDate: new Date("2016-12-01"),
