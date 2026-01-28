@@ -1,7 +1,8 @@
 import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 
 interface PagesInfoInterface {
-  imgArr: string[];
+  imgArr?: string[];
+  youtubeIds?: string[];
 }
 
 interface DescriptionDetailsInterface {
@@ -180,7 +181,8 @@ export const Projects: ProjectInterface[] = [
     },
     pagesInfoArr: [
       {
-        imgArr: ["/projects/Celestia/TitleScene.png", "/projects/Celestia/TileEditor.png", "/projects/Celestia/Profiler.png"]
+        imgArr: ["/projects/Celestia/TitleScene.png", "/projects/Celestia/TileEditor.png", "/projects/Celestia/Profiler.png"],
+        youtubeIds: ["nbFN5XPjlU8"]
       }
     ],
   },
@@ -236,7 +238,11 @@ export const Projects: ProjectInterface[] = [
         "Delivered the game successfully after six months of development and playtesting.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["BrXennxQS5A"],
+      },
+    ],
   },
   {
     id: "duck-quest",
@@ -266,7 +272,11 @@ export const Projects: ProjectInterface[] = [
         "Delivered a polished game after six weeks of intensive iteration and playtesting.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["d_K7fHC0Jfo"]
+      }
+    ],
   },
   {
     id: "legend-of-the-golden-tortoise",
@@ -295,7 +305,11 @@ export const Projects: ProjectInterface[] = [
         "Delivered a complete game after six weeks of iteration and playtesting.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["0b-zHzqd8H4"]
+      }
+    ],
   },
   {
     id: "deck-clash",
@@ -383,7 +397,11 @@ export const Projects: ProjectInterface[] = [
         "Resolved early design/pillar issues through a second prototype before pausing the project in 2020.",
       ],
     },
-    pagesInfoArr: [],
+    pagesInfoArr: [
+      {
+        youtubeIds: ["HGySy3gEe2c"]
+      }
+    ],
   },
   {
     id: "aeternum",

@@ -116,28 +116,59 @@ export default async function Project({ params }: ProjectPageProps) {
         />
       </div>
 
-      <div className="mb-7 ">
-        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-          Screenshots
-        </h2>
-        {project.pagesInfoArr.map((page, ind) => (
-          <div key={ind}>
-            <div>              
-              {page.imgArr.map((img, ind) => (
-                <Image
-                  src={img}
-                  key={ind}
-                  alt={img}
-                  width={720}
-                  height={405}
-                  className="my-4 rounded-md border bg-muted transition-colors"
-                  priority
-                />
-              ))}
-            </div>
+      {/* Screenshots (Images) */}
+{project.pagesInfoArr.some((p) => (p.imgArr?.length ?? 0) > 0) && (
+  <div className="mb-7">
+    <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+      Screenshots
+    </h2>
+
+    {project.pagesInfoArr.map((page, pageIndex) => (
+      <div key={`shots-${pageIndex}`} className="space-y-4">
+        {page.imgArr?.map((img, imgIndex) => (
+          <Image
+            src={img}
+            key={`${pageIndex}-img-${imgIndex}`}
+            alt={img}
+            width={720}
+            height={405}
+            className="rounded-md border bg-muted transition-colors"
+            priority
+          />
+        ))}
+      </div>
+    ))}
+  </div>
+)}
+
+      {/* Demo (Videos) */}
+{project.pagesInfoArr.some((p) => (p.youtubeIds?.length ?? 0) > 0) && (
+  <div className="mb-7">
+    <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+      Demo
+    </h2>
+
+    {project.pagesInfoArr.map((page, pageIndex) => (
+      <div key={`demo-${pageIndex}`} className="space-y-4">
+        {page.youtubeIds?.map((id, videoIndex) => (
+          <div
+            key={`${pageIndex}-yt-${videoIndex}`}
+            className="relative w-full overflow-hidden rounded-md border bg-muted"
+            style={{ aspectRatio: "16 / 9" }}
+          >
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src={`https://www.youtube-nocookie.com/embed/${id}`}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
           </div>
         ))}
       </div>
+    ))}
+  </div>
+)}
 
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
