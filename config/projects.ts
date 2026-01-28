@@ -133,27 +133,48 @@ export const Projects: ProjectInterface[] = [
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/projects/Spatium.png",
     descriptionDetails: {
-      paragraphs: [
-        "A collection of spacial partitioning techniques made for personal use in real-time applications as well as coursework.",
-        "The BVH implementations can comfortably handle up to 16000 meshes in an unevenly dense 3D scene, while the K-D Tree itself struggles at around 870000 triangles as tested with the Stanford Dragon model.",
-        "I suspect that performance can be (much) further improved with additional optimizations targeted at mid-build operations which I've taken some liberty around for experimentations (such as naive rotations and sorts).",
-        "The Quadtree and Octree implementations are exceptionally simple yet effective. A search test of 10 million points yields speed improvements 1/18th the cost of a regular search.",
-        "Optimizations were used where possible (bit packing, locational codes, etc.) to save on memory usage where possible.",
-        "Techniques - BVH: Top Down: K-Split Points Approach with Surface Area Heuristics. Bottom Up: Two Pass Merge Approach (Best Pair Filtering with Priority Queues, Candidate Merging). Incremental: Dynamic Insertion with Volume Heuristics & Self Balancing.",
-        "Facinatingly, with a two-pass approach for bottom-up building, real-time performance sometimes surpasses that of the top-down approach. I believe this could be due to the number of split points I'm sampling along each axis (100), although data locality could be distinctive factor as well.",
-        "Techniques - K-D Tree: Using Surface Area Heuristics, we sample a set number of uniform positions within the AABB along each axis and pick the one with the lowest cost as the split point. Heavy optimizations are used here to reduce the memory usage of individual tree nodes to improve traversal performance.",
-        "To build the project, simply navigate to the Scripts folder and run SpatiumBuildWindows.bat. This will leverage Premake and automatically generate a C++17 solution in the project's root directory.",
-      ],
-      bullets: [
-        "Implemented BVH variants: top-down K-split + SAH, bottom-up two-pass merge with PQ filtering, and incremental insertion with volume heuristics & self-balancing.",
-        "Validated BVH handling ~16,000 meshes in an unevenly dense 3D scene; tested K-D Tree at ~870,000 triangles (Stanford Dragon).",
-        "Built SAH-based K-D Tree splitting by sampling uniform AABB positions; optimized node memory footprint for faster traversal.",
-        "Implemented Quadtree and Octree with memory optimizations (bit packing, locational codes) for large point queries.",
-        "Achieved ~18x speed improvements in a 10M-point search benchmark versus regular search.",
-        "Provided a Premake-based Windows build flow via SpatiumBuildWindows.bat to generate a C++17 solution.",
-      ],
-    },
-    pagesInfoArr: [],
+  paragraphs: [
+    "A collection of spatial partitioning techniques created for personal use in real-time applications as well as coursework.",
+
+    "The BVH implementations comfortably handle up to ~16,000 meshes in an unevenly dense 3D scene, while the K-D Tree begins to struggle at around ~870,000 triangles (tested using the Stanford Dragon model).",
+
+    "I suspect performance can be improved significantly with additional optimizations targeted at mid-build operations, which I’ve taken some liberties experimenting with (such as naive rotations and sorts).",
+
+    "The Quadtree and Octree implementations are intentionally simple yet effective. A search test over 10 million points yields roughly an 18× speedup compared to a regular search.",
+
+    "Optimizations were applied where possible (bit packing, locational codes, etc.) to reduce memory usage.",
+
+    "Interestingly, with a two-pass bottom-up approach, real-time performance sometimes surpasses the top-down method. I believe this may be due to the number of split points sampled along each axis (100), although data locality could also be a contributing factor.",
+
+    "For the K-D Tree, SAH is used by sampling a fixed number of uniform positions within the AABB along each axis and selecting the lowest-cost split. Heavy optimizations reduce per-node memory usage to improve traversal performance.",
+
+    "To build the project, navigate to the Scripts folder and run SpatiumBuildWindows.bat. This leverages Premake to automatically generate a C++17 solution in the project’s root directory."
+  ],
+
+  bullets: [
+    "BVH — Top-down: K-split point construction using Surface Area Heuristics (SAH).",
+    "BVH — Bottom-up: Two-pass merge approach using best-pair filtering with priority queues and candidate merging.",
+    "BVH — Incremental: Dynamic insertion with volume heuristics and self-balancing.",
+
+    "K-D Tree — SAH-based splitting by sampling uniform positions inside the AABB along each axis.",
+    "K-D Tree — Aggressive node memory optimization to improve traversal performance.",
+
+    "---",
+
+    "Validated BVH handling ~16,000 meshes in unevenly dense 3D scenes; tested K-D Tree performance at ~870,000 triangles (Stanford Dragon).",
+    "Implemented Quadtree and Octree with memory optimizations (bit packing, locational codes) for large-scale point queries.",
+    "Achieved ~18× speed improvements in a 10M-point search benchmark versus naive search.",
+    "Provided a Premake-based Windows build pipeline via SpatiumBuildWindows.bat to generate a C++17 solution."
+  ]
+},
+
+
+    pagesInfoArr: [
+      {
+        imgArr: ["/projects/Spatium/KD_Tree_1.png", "/projects/Spatium/KD_Tree_2.png"],
+        youtubeIds: ["sTnIAujwzTA", "1Zw3dwG1Q9A"]
+      }
+    ],
   },
   {
     id: "celestia",
