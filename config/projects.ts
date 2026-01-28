@@ -30,7 +30,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "portfolio-template",
     companyName: "Nexus",
-    type: "Personal",
+    type: "Professional",
     category: ["Custom Game Engine", "Game Development"],
     shortDescription:
       "Actively developed 3D game engine powering a third-person shooter (Left Behind); technical lead managing a 12-engineer team.",
@@ -45,16 +45,19 @@ export const Projects: ProjectInterface[] = [
     companyLogoImg: "/projects/Nexus.png",
     descriptionDetails: {
       paragraphs: [
-        "Nexus is a 3D game engine currently being actively developed to power a third-person shooter named Left Behind.",
-        "As the technical lead, I'm managing a team of 12 engineers whilst working simultaneously on core architecture, a resource manager, Vulkan-based rendering, and CI/CD with GitHub Actions.",
+        "Nexus is a 3D game engine developed to power a third-person adventure game named Spirit Ward.",
+        "As the technical lead, I'm managing a team of 12 engineers whilst working simultaneously on core architecture, resource management, Vulkan-based rendering, and CI/CD with GitHub Actions.",
       ],
       bullets: [
         "Technical lead managing a 12-engineer team.",
-        "Built core engine architecture and critical runtime/editor systems.",
+        "Built core engine architecture and critical runtime/editor systems including multithreading, scripting and ECS.",
         "Developed rendering and resource pipelines while supporting a live game production.",
       ],
     },
     pagesInfoArr: [
+      {
+        youtubeIds: ["j0O26mtvuSg", "EUskm9pVnb8"]
+      }
     ],
   },
     {
@@ -244,7 +247,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "duck-quest",
     companyName: "Duck Quest",
-    type: "Personal",
+    type: "Professional",
     category: ["Game Development", "Custom Game Engine"],
     shortDescription:
       "2D deck-building action platformer delivered in six weeks; technical lead guiding architecture, tooling, and production timelines.",
@@ -276,7 +279,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "legend-of-the-golden-tortoise",
     companyName: "Legend of the Golden Tortoise",
-    type: "Personal",
+    type: "Professional",
     category: ["Game Development", "Custom Game Engine"],
     shortDescription:
       "2D stealth dungeon crawler built in C; technical lead owning engine architecture, ECS, renderer, and level builder while mentoring a mostly non-programming team.",
@@ -361,7 +364,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "solus",
     companyName: "Solus: Remnants of Attera",
-    type: "Personal",
+    type: "Professional",
     category: ["Game Development", "Unity"],
     shortDescription:
       "Action adventure hack-and-slash RPG; creative director leading a 9-person team, owning gameplay systems and marketing until project paused in 2020.",
@@ -394,7 +397,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "aeternum",
     companyName: "Aeternum: Destiny's Call",
-    type: "Personal",
+    type: "Professional",
     category: ["Game Development", "Unity"],
     shortDescription:
       "Action MMORPG built in Unity; led a 3-person team, implemented the full game and a successful PhotonBolt multiplayer prototype under tight constraints.",
@@ -424,7 +427,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "my-monster-story",
     companyName: "My Monster Story",
-    type: "Personal",
+    type: "Professional",
     category: ["Game Development", "Unity", "Mixed Reality"],
     shortDescription:
       "Mixed reality pet simulation for Microsoft HoloLens; sole programmer integrating spatial mapping, gestures, and voice controls for real-world interaction.",
@@ -454,7 +457,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "dumpster-dining",
     companyName: "Dumpster Dining",
-    type: "Personal",
+    type: "Professional",
     category: ["Game Development", "Unity"],
     shortDescription:
       "Mobile cooking simulation adventure for iOS/Android; lead designer/programmer building touchscreen-driven minigames and Unity-to-native platform integrations.",
@@ -564,7 +567,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "tales-of-lunaria",
     companyName: "Tales of Lunaria",
-    type: "Personal",
+    type: "Professional",
     category: ["Modding", "Server Management", "Game Development"],
     shortDescription:
       "High-end Minecraft RPG server with polished plugins and external infrastructure (wiki/analytics); peaked at 50 DAU in beta before shutdown in late 2018.",
@@ -616,7 +619,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "sylvan",
     companyName: "Sylvan",
-    type: "Personal",
+    type: "Professional",
     category: ["Modding", "Server Management", "Game Development"],
     shortDescription:
       "Long-running Minecraft RPG server with custom universe and monetization; led technical implementation, recruitment, and marketing, peaking at 150 daily players.",
