@@ -43,8 +43,8 @@ export const experiences: ExperienceInterface[] = [
     position: "Research Engineer",
     company: "SIT",
     location: "Singapore",
-    startDate: new Date("2025-05-05"),
-    endDate: new Date("2025-08-28"),
+    startDate: new Date("2023-05-05"),
+    endDate: new Date("2023-08-28"),
     description: [
       "Performed R&D for a VR-based cycling project involving autonomous vehicles.",
       "Created a VR cycling simulation in Unity with the XR Toolkit, linked with an external indoors bike trainer.",
